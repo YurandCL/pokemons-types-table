@@ -1,0 +1,749 @@
+---
+import Medal from '../components/Medal.astro';
+import UnOrderList from '../components/UnOrderList.astro';
+import Layout from '../layouts/Layout.astro';
+
+import "../styles/globals.css"
+
+import {BUG, DARK, DRAGON, ELECTRIC,FAIRY,FIGHTING,FIRE,FLYING,GHOST,GRASS,GROUND,ICE,NORMAL,POISON,PSYCHIC,ROCK,STEEL,WATER} from '../utils/constants'
+
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<table>
+			<thead class="tableHeader">
+				<tr>
+					<th>Tipo</th>
+					<th>Eficaz</th>
+					<th>Débil</th>
+					<th>Estándar</th>
+					<th>Vulnerable</th>
+					<th>Inmune</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="pokemonType">
+						<Medal type={STEEL} isTitle/>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={FAIRY}/></li>
+							<li><Medal type={ICE}/></li>
+							<li><Medal type={ROCK}/></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={STEEL} /></li>
+							<li><Medal type={WATER} /></li>
+							<li><Medal type={ELECTRIC} /></li>
+							<li><Medal type={FIRE} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={STEEL} /></li>
+							<li><Medal type={BUG} /></li>
+							<li><Medal type={DRAGON} /></li>
+							<li><Medal type={NORMAL} /></li>
+							<li><Medal type={GRASS} /></li>
+							<li><Medal type={PSYCHIC} /></li>
+							<li><Medal type={POISON} /></li>
+							<li><Medal type={FLYING} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={FIRE} /></li>
+							<li><Medal type={FIGHTING} /></li>
+							<li><Medal type={GROUND} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={POISON} /></li>
+						</UnOrderList>
+					</td>
+				</tr>
+				<tr>
+					<td class="pokemonType">
+						<Medal type={WATER} isTitle/>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={FIRE} /></li>
+							<li><Medal type={ROCK} /></li>
+							<li><Medal type={GROUND} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={WATER} /></li>
+							<li><Medal type={DRAGON} /></li>
+							<li><Medal type={GRASS} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={STEEL} /></li>
+							<li><Medal type={WATER} /></li>
+							<li><Medal type={FIRE} /></li>
+							<li><Medal type={ICE} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={ELECTRIC} /></li>
+							<li><Medal type={GRASS} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td class="pokemonType">
+						<Medal type={BUG} isTitle />
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={GRASS} /></li>
+							<li><Medal type={PSYCHIC} /></li>
+							<li><Medal type={DARK} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={STEEL} /></li>
+							<li><Medal type={GHOST} /></li>
+							<li><Medal type={FIRE} /></li>
+							<li><Medal type={FAIRY} /></li>
+							<li><Medal type={FIGHTING} /></li>
+							<li><Medal type={FLYING} /></li>
+							<li><Medal type={POISON} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={FIGHTING} /></li>
+							<li><Medal type={GRASS} /></li>
+							<li><Medal type={GROUND} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={FIRE} /></li>
+							<li><Medal type={ROCK} /></li>
+							<li><Medal type={FLYING} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td class="pokemonType">
+						<Medal type={DRAGON} isTitle/>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={DRAGON} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={STEEL} /></li>
+							<li><Medal type={FAIRY} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={WATER} /></li>
+							<li><Medal type={FIRE} /></li>
+							<li><Medal type={ELECTRIC} /></li>
+							<li><Medal type={GRASS} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={DRAGON} /></li>
+							<li><Medal type={FAIRY} /></li>
+							<li><Medal type={ICE} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td class="pokemonType">
+						<Medal type={ELECTRIC} isTitle/>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={WATER} /></li>
+							<li><Medal type={FLYING} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={DRAGON} /></li>
+							<li><Medal type={ELECTRIC} /></li>
+							<li><Medal type={GRASS} /></li>
+							<li><Medal type={GROUND} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={STEEL} /></li>
+							<li><Medal type={ELECTRIC} /></li>
+							<li><Medal type={FLYING} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={GROUND} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td class="pokemonType">
+						<Medal type={GHOST} isTitle />
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={GHOST} /></li>
+							<li><Medal type={FLYING} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={NORMAL} /></li>
+							<li><Medal type={DARK} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={BUG} /></li>
+							<li><Medal type={FIGHTING} /></li>
+							<li><Medal type={NORMAL} /></li>
+							<li><Medal type={DARK} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={GHOST} /></li>
+							<li><Medal type={DARK} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={FIGHTING} /></li>
+							<li><Medal type={NORMAL} /></li>
+						</UnOrderList>
+					</td>
+				</tr>
+				<tr>
+					<td class="pokemonType">
+						<Medal type={FIRE} isTitle />
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={STEEL} /></li>
+							<li><Medal type={BUG} /></li>
+							<li><Medal type={ICE} /></li>
+							<li><Medal type={GRASS} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={WATER} /></li>
+							<li><Medal type={DRAGON} /></li>
+							<li><Medal type={FIRE} /></li>
+							<li><Medal type={ROCK} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={STEEL} /></li>
+							<li><Medal type={BUG} /></li>
+							<li><Medal type={FIRE} /></li>
+							<li><Medal type={ICE} /></li>
+							<li><Medal type={GRASS} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={WATER} /></li>
+							<li><Medal type={ROCK} /></li>
+							<li><Medal type={GROUND} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td class="pokemonType">
+						<Medal type={FAIRY} isTitle />
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={DRAGON} /></li>
+							<li><Medal type={FIGHTING} /></li>
+							<li><Medal type={DARK} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={STEEL} /></li>
+							<li><Medal type={FIRE} /></li>
+							<li><Medal type={POISON} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={BUG} /></li>
+							<li><Medal type={DRAGON} /></li>
+							<li><Medal type={FIGHTING} /></li>
+							<li><Medal type={DARK} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={STEEL} /></li>
+							<li><Medal type={DARK} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={DRAGON} /></li>
+						</UnOrderList>
+					</td>
+				</tr>
+				<tr>
+					<td class="pokemonType">
+						<Medal type={ICE} isTitle />
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={DRAGON} /></li>
+							<li><Medal type={GRASS} /></li>
+							<li><Medal type={GROUND} /></li>
+							<li><Medal type={FLYING} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={STEEL} /></li>
+							<li><Medal type={WATER} /></li>
+							<li><Medal type={FIRE} /></li>
+							<li><Medal type={ICE} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={ICE} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={STEEL} /></li>
+							<li><Medal type={FIRE} /></li>
+							<li><Medal type={FIGHTING} /></li>
+							<li><Medal type={ROCK} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td class="pokemonType">
+						<Medal type={FIGHTING} isTitle />
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={NORMAL} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={BUG} /></li>
+							<li><Medal type={GHOST} /></li>
+							<li><Medal type={FAIRY} /></li>
+							<li><Medal type={PSYCHIC} /></li>
+							<li><Medal type={POISON} /></li>
+							<li><Medal type={FLYING} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={BUG} /></li>
+							<li><Medal type={DARK} /></li>
+							<li><Medal type={FLYING} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={FAIRY} /></li>
+							<li><Medal type={PSYCHIC} /></li>
+							<li><Medal type={FLYING} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={GHOST} /></li>
+						</UnOrderList>
+					</td>
+				</tr>
+				<tr>
+					<td class="pokemonType">
+						<Medal type={NORMAL} isTitle />
+					</td>
+					<td>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={STEEL} /></li>
+							<li><Medal type={GHOST} /></li>
+							<li><Medal type={ROCK} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={GHOST} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={FIGHTING} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={GHOST} /></li>
+						</UnOrderList>
+					</td>
+				</tr>
+				<tr>
+					<td class="pokemonType">
+						<Medal type={GRASS} isTitle />
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={WATER} /></li>
+							<li><Medal type={ROCK} /></li>
+							<li><Medal type={GROUND} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={STEEL} /></li>
+							<li><Medal type={BUG} /></li>
+							<li><Medal type={DRAGON} /></li>
+							<li><Medal type={FIRE} /></li>
+							<li><Medal type={GRASS} /></li>
+							<li><Medal type={POISON} /></li>
+							<li><Medal type={FLYING} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={WATER} /></li>
+							<li><Medal type={ELECTRIC} /></li>
+							<li><Medal type={GRASS} /></li>
+							<li><Medal type={GROUND} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={BUG} /></li>
+							<li><Medal type={FIRE} /></li>
+							<li><Medal type={ICE} /></li>
+							<li><Medal type={POISON} /></li>
+							<li><Medal type={FLYING} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td class="pokemonType">
+						<Medal type={PSYCHIC} isTitle />
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={FIGHTING} /></li>
+							<li><Medal type={POISON} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={STEEL} /></li>
+							<li><Medal type={PSYCHIC} /></li>
+							<li><Medal type={DARK} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={FIGHTING} /></li>
+							<li><Medal type={PSYCHIC} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={BUG} /></li>
+							<li><Medal type={GHOST} /></li>
+							<li><Medal type={DARK} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={DARK} /></li>
+						</UnOrderList>
+					</td>
+				</tr>
+				<tr>
+					<td class="pokemonType">
+						<Medal type={ROCK} isTitle />
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={BUG} /></li>
+							<li><Medal type={FIRE} /></li>
+							<li><Medal type={ICE} /></li>
+							<li><Medal type={FLYING} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={STEEL} /></li>
+							<li><Medal type={FIGHTING} /></li>
+							<li><Medal type={GROUND} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={FIRE} /></li>
+							<li><Medal type={NORMAL} /></li>
+							<li><Medal type={POISON} /></li>
+							<li><Medal type={FLYING} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={STEEL} /></li>
+							<li><Medal type={WATER} /></li>
+							<li><Medal type={FIGHTING} /></li>
+							<li><Medal type={GRASS} /></li>
+							<li><Medal type={GROUND} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td class="pokemonType">
+						<Medal type={DARK} isTitle />
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={GHOST} /></li>
+							<li><Medal type={PSYCHIC} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={FAIRY} /></li>
+							<li><Medal type={FIGHTING} /></li>
+							<li><Medal type={DARK} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={GHOST} /></li>
+							<li><Medal type={PSYCHIC} /></li>
+							<li><Medal type={DARK} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={BUG} /></li>
+							<li><Medal type={FAIRY} /></li>
+							<li><Medal type={FIGHTING} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td class="pokemonType">
+						<Medal type={GROUND} isTitle />
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={STEEL} /></li>
+							<li><Medal type={ELECTRIC} /></li>
+							<li><Medal type={FIRE} /></li>
+							<li><Medal type={ROCK} /></li>
+							<li><Medal type={POISON} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={BUG} /></li>
+							<li><Medal type={GRASS} /></li>
+							<li><Medal type={FLYING} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={ELECTRIC} /></li>
+							<li><Medal type={ROCK} /></li>
+							<li><Medal type={POISON} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={WATER} /></li>
+							<li><Medal type={ICE} /></li>
+							<li><Medal type={GRASS} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={ELECTRIC} /></li>
+						</UnOrderList>
+					</td>
+				</tr>
+				<tr>
+					<td class="pokemonType">
+						<Medal type={POISON} isTitle />
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={FAIRY} /></li>
+							<li><Medal type={GRASS} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={STEEL} /></li>
+							<li><Medal type={GHOST} /></li>
+							<li><Medal type={ROCK} /></li>
+							<li><Medal type={GROUND} /></li>
+							<li><Medal type={POISON} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={FAIRY} /></li>
+							<li><Medal type={GRASS} /></li>
+							<li><Medal type={POISON} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={PSYCHIC} /></li>
+							<li><Medal type={GROUND} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td class="pokemonType">
+						<Medal type={FLYING} isTitle />
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={BUG} /></li>
+							<li><Medal type={FIGHTING} /></li>
+							<li><Medal type={GRASS} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={STEEL} /></li>
+							<li><Medal type={ELECTRIC} /></li>
+							<li><Medal type={ROCK} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={FIGHTING} /></li>
+							<li><Medal type={GRASS} /></li>
+							<li><Medal type={GROUND} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={ELECTRIC} /></li>
+							<li><Medal type={ICE} /></li>
+							<li><Medal type={ROCK} /></li>
+						</UnOrderList>
+					</td>
+					<td>
+						<UnOrderList >
+							<li><Medal type={GROUND} /></li>
+						</UnOrderList>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</main>
+</Layout>
+
+<style>
+	main{
+		padding-bottom: 1rem;
+	}
+	.pokemonType,.tableHeader{
+		position: sticky;
+	}
+
+	.tableHeader{
+		z-index: 1;
+		top: 0;
+		-webkit-box-shadow: 0 2px 20px 1px rgba(61,61,61,0.75);
+		-moz-box-shadow: 0 2px 20px 1px rgba(61,61,61,0.75);
+		box-shadow: 0 2px 20px 1px rgba(61,61,61,0.75);
+	}
+
+	.pokemonType{
+		left: 0;
+	}
+
+	table{
+		border-collapse: collapse;
+	}
+
+	td, th{
+		background-color: #212121;
+		border-color:#4e4e4e;
+		border-style: solid;
+		border-width: 1px;
+		padding: 0.5rem;
+		width: max-content;
+	}
+
+	th{
+		padding: 1rem;
+	}
+
+	li{
+		list-style: none;
+	}
+
+	@media (prefers-color-scheme: light){
+		td, th{
+			background-color: white;
+		}
+
+		.tableHeader{
+		-webkit-box-shadow: 0 2px 20px 1px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0 2px 20px 1px rgba(0,0,0,0.75);
+		box-shadow: 0 2px 20px 1px rgba(0,0,0,0.75);
+	}
+	}
+</style>

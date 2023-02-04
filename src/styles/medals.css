@@ -1,0 +1,237 @@
+.steel img,
+.water img,
+.bug img,
+.dragon img,
+.electric img,
+.ghost img,
+.fire img,
+.fairy img,
+.ice img,
+.fighting img,
+.normal img,
+.grass img,
+.psychic img,
+.rock img,
+.dark img,
+.ground img,
+.poison img,
+.flying img {
+  border-radius: 20px;
+}
+
+.steel img {
+  background-color: rgb(90, 144, 169);
+}
+
+.water img {
+  background-color: rgb(83, 149, 222);
+}
+
+.bug img {
+  background-color: rgb(153, 198, 49);
+}
+
+.dragon img {
+  background-color: rgb(7, 99, 173);
+}
+
+.electric img {
+  background-color: rgb(245, 209, 62);
+}
+
+.ghost img {
+  background-color: rgb(82, 107, 174);
+}
+
+.fire img {
+  background-color: rgb(255, 156, 82);
+}
+
+.fairy img {
+  background-color: rgb(239, 141, 222);
+}
+
+.ice img {
+  background-color: rgb(113, 206, 194);
+}
+
+.fighting img {
+  background-color: rgb(226, 70, 83);
+}
+
+.normal img {
+  background-color: rgb(147, 153, 165);
+}
+
+.grass img {
+  background-color: rgb(99, 189, 82);
+}
+
+.psychic img {
+  background-color: rgb(248, 110, 118);
+}
+
+.rock img {
+  background-color: rgb(198, 189, 140);
+}
+
+.dark img {
+  background-color: rgb(74, 72, 88);
+}
+
+.ground img {
+  background-color: rgb(216, 120, 70);
+}
+
+.poison img {
+  background-color: rgb(165, 103, 199);
+}
+
+.flying img {
+  background-color: rgb(136, 173, 222);
+}
+
+.steelHighlight,
+.waterHighlight,
+.bugHighlight,
+.dragonHighlight,
+.electricHighlight,
+.ghostHighlight,
+.fireHighlight,
+.fairyHighlight,
+.iceHighlight,
+.fightingHighlight,
+.normalHighlight,
+.grassHighlight,
+.psychicHighlight,
+.rockHighlight,
+.darkHighlight,
+.groundHighlight,
+.poisonHighlight,
+.flyingHighlight {
+  border-style: solid;
+  border-width: 1px;
+  padding: 0.25rem 0.5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  border-radius: 1.5rem;
+}
+
+.steelHighlight {
+  border-color: rgba(90, 144, 169, 0.66);
+  color: rgb(90, 144, 169);
+}
+
+.waterHighlight {
+  border-color: rgba(83, 149, 222, 0.66);
+  color: rgb(83, 149, 222);
+}
+
+.bugHighlight {
+  border-color: rgba(153, 198, 49, 0.66);
+  color: rgb(153, 198, 49);
+}
+
+.dragonHighlight {
+  border-color: rgba(7, 99, 173, 0.66);
+  color: rgb(7, 99, 173);
+}
+
+.electricHighlight {
+  border-color: rgba(245, 209, 62, 0.66);
+  color: rgb(245, 209, 62);
+}
+
+.ghostHighlight {
+  border-color: rgba(82, 107, 174, 0.66);
+  color: rgb(82, 107, 174);
+}
+
+.fireHighlight {
+  border-color: rgba(255, 156, 82, 0.66);
+  color: rgb(255, 156, 82);
+}
+
+.fairyHighlight {
+  border-color: rgba(239, 141, 222, 0.66);
+  color: rgb(239, 141, 222);
+}
+
+.iceHighlight {
+  border-color: rgba(113, 206, 194, 0.66);
+  color: rgb(113, 206, 194);
+}
+
+.fightingHighlight {
+  border-color: rgba(226, 70, 83, 0.66);
+  color: rgb(226, 70, 83);
+}
+
+.normalHighlight {
+  border-color: rgba(147, 153, 165, 0.66);
+  color: rgb(147, 153, 165);
+}
+
+.grassHighlight {
+  border-color: rgba(99, 189, 82, 0.66);
+  color: rgb(99, 189, 82);
+}
+
+.psychicHighlight {
+  border-color: rgba(248, 110, 118, 0.66);
+  color: rgb(248, 110, 118);
+}
+
+.rockHighlight {
+  border-color: rgba(198, 189, 140, 0.66);
+  color: rgb(198, 189, 140);
+}
+
+.darkHighlight {
+  border-color: rgba(195, 193, 201, 0.66);
+  color: rgb(195, 193, 201);
+}
+
+.groundHighlight {
+  border-color: rgba(216, 120, 70, 0.66);
+  color: rgb(216, 120, 70);
+}
+
+.poisonHighlight {
+  border-color: rgba(165, 103, 199, 0.66);
+  color: rgb(165, 103, 199);
+}
+
+.flyingHighlight {
+  border-color: rgba(136, 173, 222, 0.66);
+  color: rgb(136, 173, 222);
+}
+
+@media (prefers-color-scheme: light) {
+
+  .steelHighlight,
+  .waterHighlight,
+  .bugHighlight,
+  .dragonHighlight,
+  .electricHighlight,
+  .ghostHighlight,
+  .fireHighlight,
+  .fairyHighlight,
+  .iceHighlight,
+  .fightingHighlight,
+  .normalHighlight,
+  .grassHighlight,
+  .psychicHighlight,
+  .rockHighlight,
+  .darkHighlight,
+  .groundHighlight,
+  .poisonHighlight,
+  .flyingHighlight {
+    background-color: #f5f5f5;
+  }
+
+  .darkHighlight {
+    border-color: rgba(74, 72, 88, 0.66);
+    color: rgb(74, 72, 88);
+  }
+}

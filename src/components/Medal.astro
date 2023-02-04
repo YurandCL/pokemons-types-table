@@ -1,0 +1,19 @@
+---
+import {useMedal} from '../hooks/useMedal'
+import '../styles/medals.css'
+
+export interface Props {
+	type: string;
+	isTitle?: boolean;
+}
+
+const { type, isTitle } = Astro.props;
+const {url, enName} = useMedal(type)
+
+const highlight = isTitle ? `${enName}Highlight justify-center` : ''
+---
+
+<div class={`flex items-center gap-1 capitalize ${enName} ${highlight}`}>
+	<img src={url} alt={`medalla ${type}`} width="20" height="20">
+	{type}
+</div>
